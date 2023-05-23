@@ -82,14 +82,15 @@ A command to get data from the internet si the `curl` command.
 
 ### Options
 
-| Short Flag | Long Flag    | Description                                                         |
-| ---------- | ------------ | ------------------------------------------------------------------- |
-| -f,        | --fail       | Fail silently on server errors.                                     |
-| -G,        | --get        | Http get request.                                                   |
-| -s,        | --silent     | Silent or quiet mode.                                               |
-| -S,        | --show-error | When used with -s, --silent, it shows an error message if it fails. |
-| -H,        | --header     | Add a request header                                                |
-|            | --compressed | Request a compressed response automatically decompress the content. |
+| Short Flag | Long Flag        | Description                                                         |
+| ---------- | ---------------- | ------------------------------------------------------------------- |
+| -f,        | --fail           | Fail silently on server errors.                                     |
+| -G,        | --get            | Http get request.                                                   |
+| -s,        | --silent         | Silent or quiet mode.                                               |
+| -S,        | --show-error     | When used with -s, --silent, it shows an error message if it fails. |
+| -H,        | --header         | Add a request header                                                |
+|            | --compressed     | Request a compressed response automatically decompress the content. |
+|            | --data-urlencode | Post data encoded for urls                                          |
 
 ### Examples
 
