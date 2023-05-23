@@ -4,6 +4,7 @@
 
 -  [Cron Jobs](#cron-jobs)
 -  [Links](#links)
+-  [Web Data](#web-data)
 -  [To Do](#to-do)
 
 ---
@@ -72,6 +73,33 @@ ln -s /home/user/documents/doc.txt /home/user/desktop
 # Link a directory
 ln -s /mnt/c/Users/user/Desktop /home/user/desktop
 ```
+
+---
+
+## Web Data
+
+A command to get data from the internet si the `curl` command.
+
+### Options
+
+| Short Flag | Long Flag    | Description                                                         |
+| ---------- | ------------ | ------------------------------------------------------------------- |
+| -f,        | --fail       | Fail silently on server errors.                                     |
+| -G,        | --get        | Http get request.                                                   |
+| -s,        | --silent     | Silent or quiet mode.                                               |
+| -S,        | --show-error | When used with -s, --silent, it shows an error message if it fails. |
+| -H,        | --header     | Add a request header                                                |
+|            | --compressed | Request a compressed response automatically decompress the content. |
+
+### Examples
+
+```bash
+# curl [options / URLs]
+
+curl -fGsS -H 'Accept-Language: en' --compressed 'wttr.in'
+```
+
+---
 
 ## To Do
 
