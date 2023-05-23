@@ -29,7 +29,7 @@ To edit and list cron jobs use the `crontab` command
 # crontab [-u user] [options]
 
 # List the cron jobs of the root user
-crontab -e -u root
+crontab -l -u root
 
 # Edit cron jobs of the root user
 crontab -e -u root
