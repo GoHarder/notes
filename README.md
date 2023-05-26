@@ -1,10 +1,13 @@
 # Notes
 
+Repository of various notes
+
 ## Notebooks
 
 -  [Databases](#databases)
 -  [Languages](#languages)
 -  [Operating Systems](#operating-systems)
+-  [Stubs](./stubs/main.md)
 -  [Technologies](#technologies)
 
 ---
