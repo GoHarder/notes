@@ -5,6 +5,7 @@
 -  [Databases](#databases)
 -  [Languages](#languages)
 -  [Operating Systems](#operating-systems)
+-  [Technologies](#technologies)
 
 ---
 
@@ -23,3 +24,7 @@
 ## Operating Systems
 
 -  [Linux](./linux/main.md)
+
+## Technologies
+
+-  [Machine Learning](./machine-learning/main.md)
