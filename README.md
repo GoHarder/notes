@@ -33,4 +33,5 @@ Repository of various notes
 ## Technologies
 
 -  [Docker](./docker/main.md)
+-  [Kubernetes](./kubernetes/main.md)
 -  [Machine Learning](./machine-learning/main.md)
