@@ -3,8 +3,12 @@
 ## Sections
 
 -  [Overall Structure](#overall-structure)
+-  [Core Components](#core-components)
 -  [Objects](#objects)
+   -  [Container](#container)
+   -  [Deployment](#deployment)
    -  [Namespace](#namespace)
+   -  [Node](#node)
    -  [Pod](#pod)
    -  [Service](#service)
 
@@ -21,9 +25,23 @@
 
 ---
 
+## Core Components
+
+ADD SECTION
+
+---
+
 ## Objects
 
 Kubernetes entities are called objects.
+
+### Container
+
+ADD SECTION
+
+### Deployment
+
+ADD SECTION
 
 ### Namespace
 
@@ -35,13 +53,17 @@ Kubernetes entities are called objects.
 
 [Reference](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
 
+### Node
+
+ADD SECTION
+
 ### Pod
 
 ![namespace](./assets/objects/pod.svg)
 
 > **Pods** are the smallest deployable units of computing that you can create and manage in Kubernetes.
 >
-> A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
+> A Pod (as in a pod of whales or pea pod) is a group of one or more [containers](#container), with shared storage and network resources, and a specification for how to run the containers.
 > A Pod's contents are always co-located and co-scheduled, and run in a shared context.
 > A Pod models an application-specific "logical host": it contains one or more application containers which are relatively tightly coupled.
 > In non-cloud contexts, applications executed on the same physical or virtual machine are analogous to cloud applications executed on the same logical host.
@@ -52,7 +74,7 @@ Kubernetes entities are called objects.
 
 ![service](./assets/objects/service.svg)
 
-> In Kubernetes, a **Service** is a method for exposing a network application that is running as one or more Pods in your cluster.
+> In Kubernetes, a **Service** is a method for exposing a network application that is running as one or more [Pods](#pod) in your cluster.
 >
 > A key aim of Services in Kubernetes is that you don't need to modify your existing application to use an unfamiliar service discovery mechanism.
 > You can run code in Pods, whether this is a code designed for a cloud-native world, or an older app you've containerized.
