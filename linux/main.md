@@ -3,8 +3,18 @@
 ## Sections
 
 -  [Cron Jobs](#cron-jobs)
+   -  [Options](#options)
+   -  [Examples](#examples)
+   -  [Setting Time](#setting-time)
 -  [Links](#links)
+   -  [Options](#options-1)
+   -  [Examples](#examples-1)
 -  [Web Data](#web-data)
+   -  [Options](#options-2)
+   -  [Examples](#examples-2)
+-  [XDG base directory specification](#xdg-base-directory-specification)
+   -  [Scripts](#scripts)
+   -  [Directories](#directories)
 -  [To Do](#to-do)
 
 ---
@@ -99,6 +109,50 @@ A command to get data from the internet si the `curl` command.
 
 curl -fGsS -H 'Accept-Language: en' --compressed 'wttr.in'
 ```
+
+---
+
+## XDG base directory specification
+
+> Various specifications specify files and file formats.
+> This specification defines where these files should be looked for by defining one or more base directories relative to which files should be located.
+
+### Scripts
+
+> User-specific executable files may be stored in `$HOME/.local/bin`.
+> Distributions should ensure this directory shows up in the UNIX $PATH environment variable, at an appropriate place.
+
+### Directories
+
+> `$XDG_DATA_HOME` defines the base directory relative to which user-specific data files should be stored.
+
+```bash
+data_home="${XDG_DATA_HOME:-$HOME/.local/share}"
+```
+
+> `$XDG_CONFIG_HOME` defines the base directory relative to which user-specific configuration files should be stored.
+
+```bash
+config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+```
+
+> `$XDG_STATE_HOME` defines the base directory relative to which user-specific state files should be stored.
+> The `$XDG_STATE_HOME` contains state data that should persist between (application) restarts, but that is not important or portable enough to the user that it should be stored in `$XDG_DATA_HOME`. It may contain:
+>
+> -  actions history (logs, history, recently used files, …)
+> -  current state of the application that can be reused on a restart (view, layout, open files, undo history, …)
+
+```bash
+state_home="${XDG_STATE_HOME:-$HOME/.local/state}"
+```
+
+> `$XDG_CACHE_HOME` defines the base directory relative to which user-specific non-essential data files should be stored.
+
+```bash
+cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
+```
+
+[Source - https://specifications.freedesktop.org](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
 
 ---
 
