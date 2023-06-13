@@ -1,17 +1,26 @@
-# Kubernetes
+# Kubernetes <!-- omit in toc -->
 
-## Sections
+## Sections <!-- omit in toc -->
 
--  [Overall Structure](#overall-structure)
--  [Core Components](#core-components)
--  [Setup](#setup)
--  [Objects](#objects)
-   -  [Container](#container)
-   -  [Deployment](#deployment)
-   -  [Namespace](#namespace)
-   -  [Node](#node)
-   -  [Pod](#pod)
-   -  [Service](#service)
+- [Overall Structure](#overall-structure)
+- [Core Components](#core-components)
+- [Master Nodes](#master-nodes)
+- [Worker Nodes](#worker-nodes)
+- [Setup](#setup)
+  - [Todo](#todo)
+  - [What Kubernetes will do](#what-kubernetes-will-do)
+- [Objects](#objects)
+  - [Container](#container)
+  - [Container Runtime](#container-runtime)
+  - [Control Plane](#control-plane)
+  - [Deployment](#deployment)
+  - [Kube Proxy](#kube-proxy)
+  - [Kubelet](#kubelet)
+  - [Namespace](#namespace)
+  - [Node](#node)
+  - [Pod](#pod)
+  - [Service](#service)
+  - [Workload](#workload)
 
 ---
 
@@ -38,9 +47,31 @@
 
 ---
 
-## Setup
+## Master Nodes
 
 ADD SECTION
+
+---
+
+## Worker Nodes
+
+ADD SECTION
+
+---
+
+## Setup
+
+### Todo
+
+1. Create the cluster and the node instances (Worker & Master Nodes)
+2. Setup API Server, kubelet, and other Kubernetes services / software on Nodes
+3. Create other (cloud) provider resources that might be needed (e.g. Load Balancer, Filesystems)
+
+### What Kubernetes will do
+
+1. Create your objects (e.g. Pods) and manage them
+2. Monitor Pods and re-create them, scale Pods etc.
+3. Kubernetes utilizes the provided (cloud) resources to apply your configuration / goals
 
 ---
 
@@ -50,7 +81,7 @@ Kubernetes entities are called objects.
 
 ### Container
 
-ADD SECTION
+A lightweight and portable executable image that contains software and all of its dependencies.
 
 ### Container Runtime
 
@@ -75,6 +106,7 @@ ADD SECTION
 ### Namespace
 
 ![namespace](./assets/objects/namespace.svg)
+Namespace
 
 > In Kubernetes, **namespaces** provides a mechanism for isolating groups of resources within a single cluster.
 > Names of resources need to be unique within a namespace, but not across namespaces.
@@ -84,8 +116,12 @@ ADD SECTION
 
 ### Node
 
+
 ![master node](./assets/objects/master-node.svg)
+Master Node
+
 ![node](./assets/objects/node.svg)
+Worker Node
 
 > Kubernetes runs your [workload](#workload) by placing containers into Pods to run on _Nodes_. A node may be a virtual or physical machine, depending on the cluster.
 > Each node is managed by the [control plane](#control-plane) and contains the services necessary to run Pods.
@@ -96,6 +132,7 @@ ADD SECTION
 ### Pod
 
 ![namespace](./assets/objects/pod.svg)
+Pod
 
 > **Pods** are the smallest deployable units of computing that you can create and manage in Kubernetes.
 >
@@ -109,6 +146,7 @@ ADD SECTION
 ### Service
 
 ![service](./assets/objects/service.svg)
+Service
 
 > In Kubernetes, a **Service** is a method for exposing a network application that is running as one or more [Pods](#pod) in your cluster.
 >

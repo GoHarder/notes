@@ -1,21 +1,21 @@
-# Linux
+# Linux <!-- omit in toc -->
 
-## Sections
+## Sections <!-- omit in toc -->
 
--  [Cron Jobs](#cron-jobs)
-   -  [Options](#options)
-   -  [Examples](#examples)
-   -  [Setting Time](#setting-time)
--  [Links](#links)
-   -  [Options](#options-1)
-   -  [Examples](#examples-1)
--  [Web Data](#web-data)
-   -  [Options](#options-2)
-   -  [Examples](#examples-2)
--  [XDG base directory specification](#xdg-base-directory-specification)
-   -  [Scripts](#scripts)
-   -  [Directories](#directories)
--  [To Do](#to-do)
+- [Cron Jobs](#cron-jobs)
+  - [Options](#options)
+  - [Examples](#examples)
+  - [Setting Time](#setting-time)
+- [Links](#links)
+  - [Options](#options-1)
+  - [Examples](#examples-1)
+- [Web Data](#web-data)
+  - [Options](#options-2)
+  - [Examples](#examples-2)
+- [XDG base directory specification](#xdg-base-directory-specification)
+  - [Scripts](#scripts)
+  - [Directories](#directories)
+- [To Do](#to-do)
 
 ---
 
