@@ -1,14 +1,16 @@
-# MongoDB
+# MongoDB <!-- omit in toc -->
 
-## Sections
+## Sections <!-- omit in toc -->
 
--  [Aggregations](#aggregations)
+- [Aggregations](#aggregations)
+  - [Sort a Sub-Array](#sort-a-sub-array)
+- [Data Snippets](#data-snippets)
 
 ---
 
 ## Aggregations
 
-### Sort a sub array
+### Sort a Sub-Array
 
 This will be replaced with $sortArray in version 5.2
 
@@ -67,4 +69,32 @@ This will be replaced with $sortArray in version 5.2
       }
    }
 }
+```
+
+## Data Snippets
+
+Some javascript functions that are useful to work with Mongodb documents
+
+```js
+/**
+ * It takes an array of documents and returns an array of documents with the `_id` property converted
+ * from an object to a string.
+ * @param docs - The array of documents to be processed.
+ */
+const peelId = (docs) =>
+   docs.map((doc) => {
+      doc._id = doc._id.$oid;
+      return doc;
+   });
+
+/**
+ * It sorts an array of objects by the value of the `name` property.
+ * @param docs - The array of documents to sort.
+ */
+const sortName = (docs) =>
+   docs.sort((a, b) => {
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
+   });  
 ```
