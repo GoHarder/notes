@@ -1,10 +1,10 @@
-# Docker
+# Docker <!-- omit in toc -->
 
-## Sections
+## Sections <!-- omit in toc -->
 
--  [Networking](#networking)
-   -  [Localhost](#localhost)
-   -  [Between Containers](#between-containers)
+- [Networking](#networking)
+  - [Localhost](#localhost)
+  - [Between Containers](#between-containers)
 
 ---
 
