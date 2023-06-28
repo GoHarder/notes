@@ -15,7 +15,8 @@
 - [XDG base directory specification](#xdg-base-directory-specification)
   - [Scripts](#scripts)
   - [Directories](#directories)
-- [To Do](#to-do)
+- [WSL](#wsl)
+  - [Mount a windows network drive](#mount-a-windows-network-drive)
 
 ---
 
@@ -156,9 +157,17 @@ cache_home="${XDG_CACHE_HOME:-$HOME/.cache}"
 
 ---
 
-## To Do
+## WSL
 
-Sections to add:
+### Mount a windows network drive
 
--  gpg
--  rsync
+This will require editing the fstab file.
+
+```bash
+sudo nano /etc/fstab
+```
+
+[Instructions](https://linuxize.com/post/how-to-mount-cifs-windows-share-on-linux/)
+
+---
+
