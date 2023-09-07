@@ -89,7 +89,7 @@ ln -s /mnt/c/Users/user/Desktop /home/user/desktop
 
 ## Web Data
 
-A command to get data from the internet si the `curl` command.
+A command to get data from the internet is the `curl` command.
 
 ### Options
 
