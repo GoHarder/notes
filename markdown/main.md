@@ -1,11 +1,12 @@
-# Markdown
+# Markdown <!-- omit in toc -->
 
-## Sections
+## Sections <!-- omit in toc -->
 
--  [Code-Blocks](#code-blocks)
--  [Latex](#latex)
--  [Links](#links)
--  [Text Styles](#text-styles)
+- [Code-Blocks](#code-blocks)
+- [Latex](#latex)
+  - [Use](#use)
+- [Links](#links)
+- [Text Styles](#text-styles)
 
 ---
 
@@ -62,6 +63,8 @@ _Italic text_
 **Bold text**
 **_Bold and italic text_**
 `Code text`
+~~Strike through text~~
+<u>Underline text</u>
 ```
 
 _Italic text_
@@ -71,5 +74,9 @@ _Italic text_
 **_Bold and italic text_**
 
 `Code text`
+
+~~Strike through text~~
+
+<u>Underline text</u>
 
 ---
