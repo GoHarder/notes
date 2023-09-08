@@ -3,6 +3,7 @@
 ## Subjects <!-- omit in toc -->
 
 - [Frameworks](./frameworks.md)
+- [JSDoc](./jsooc.md)
 - [Node.js](./node.md)
 
 ## Sections <!-- omit in toc -->
