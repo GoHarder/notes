@@ -3,3 +3,4 @@
 ## Subjects <!-- omit in toc -->
 
 - [Types](./types.md)
+- [Classes](./classes.md)
