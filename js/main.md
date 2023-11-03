@@ -5,6 +5,7 @@
 - [Frameworks](./frameworks.md)
 - [JSDoc](./jsooc.md)
 - [Node.js](./node.md)
+- [TypeScript](./ts/mian.md)
 
 ## Sections <!-- omit in toc -->
 
