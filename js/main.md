@@ -11,6 +11,7 @@
 
 - [Arrays](#arrays)
 - [Functions](#functions)
+- [Booleans](#booleans)
 
 ---
 
@@ -48,3 +49,23 @@ partNumber = new Function(...partNumber.scope.args, partNumber.code);
 
 console.log(partNumber('R', 22));
 ```
+
+## Booleans
+
+Booleans behave differently when you add a negation operator.
+
+`!!` converts a truthy or falsy value to a boolean.
+
+| `value`     | `!value` | `!!value` |
+| ----------- | -------- | --------- |
+| `false`     | true     | false     |
+| `true`      | false    | true      |
+| `null`      | true     | false     |
+| `undefined` | true     | false     |
+| `0`         | true     | false     |
+| `-0`        | true     | false     |
+| `1`         | false    | true      |
+| `-5`        | false    | true      |
+| `NaN`       | true     | false     |
+| `''`        | true     | false     |
+| `'hello'`   | false    | true      |
