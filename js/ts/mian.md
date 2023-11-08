@@ -4,3 +4,4 @@
 
 - [Types](./types.md)
 - [Classes](./classes.md)
+- [Interfaces](./interfaces.md)

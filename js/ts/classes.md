@@ -192,3 +192,33 @@ class EngDepartment extends Department {
 ```
 
 ## Singletons & Private Constructors
+
+> In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to a singular instance.
+
+[Source: Wikipedia](https://en.wikipedia.org/wiki/Singleton_pattern)
+
+This pattern can be used using JavaScript classes.
+
+```TypeScript
+class ItDepartment extends Department {
+  private _latestReport: string = '';
+  // Storing the instance
+  private static instance: ItDepartment;
+
+  private constructor(id: string, private reports: string[]) {
+    super(id, 'Information Technology');
+  }
+
+  // This ensures that the instance can be used.
+  static getInstance() {
+    if (ItDepartment.instance) {
+      return this.instance;
+    }
+    this.instance = new ItDepartment('it', []);
+    return this.instance;
+  }
+}
+
+// How to get the instance
+const dept = ItDepartment.getInstance();
+```
