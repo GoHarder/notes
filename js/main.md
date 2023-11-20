@@ -12,6 +12,8 @@
 - [Arrays](#arrays)
 - [Functions](#functions)
 - [Booleans](#booleans)
+  - [Negation Operator](#negation-operator)
+  - [Checking for `undefined` and `null`](#checking-for-undefined-and-null)
 
 ---
 
@@ -52,6 +54,8 @@ console.log(partNumber('R', 22));
 
 ## Booleans
 
+### Negation Operator
+
 Booleans behave differently when you add a negation operator.
 
 `!!` converts a truthy or falsy value to a boolean.
@@ -69,3 +73,12 @@ Booleans behave differently when you add a negation operator.
 | `NaN`       | true     | false     |
 | `''`        | true     | false     |
 | `'hello'`   | false    | true      |
+
+### Checking for `undefined` and `null`
+
+```JavaScript
+// This checks for null and undefined.
+if (value != null) {
+  //...
+}
+```

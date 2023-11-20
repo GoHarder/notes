@@ -36,7 +36,7 @@ const engineering = new Department('engineering');
 
 // Errors this use.
 // const engineeringCopy = { describe: engineering.describe }
-// engineeringCopy.describe()
+engineeringCopy.describe()
 
 // Allows this use.
 // The copy matches the `Department` type.
