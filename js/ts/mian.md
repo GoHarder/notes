@@ -5,3 +5,4 @@
 - [Types](./types.md)
 - [Classes](./classes.md)
 - [Interfaces](./interfaces.md)
+- [Advanced Types](./advanced.md)
