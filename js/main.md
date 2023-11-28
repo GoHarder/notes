@@ -9,12 +9,39 @@
 
 ## Sections <!-- omit in toc -->
 
+- [2023 Features](#2023-features)
 - [Arrays](#arrays)
 - [Functions](#functions)
 - [Booleans](#booleans)
   - [Negation Operator](#negation-operator)
   - [Checking for `undefined` and `null`](#checking-for-undefined-and-null)
 
+---
+
+## 2023 Features
+
+```JavaScript
+const ppl = [
+  { name: 'John', age: 2 },
+  { name: 'Jane', age: 19 },
+  { name: 'Jeff', age: 69 },
+];
+
+const organized = Object.groupBy(ppl, ({age}) => {
+  if (age >= 21) {
+    return 'adult'
+  } else {
+    return 'child'
+  }
+})
+```
+
+```JavaScript
+// Does not mutate original array
+// toReversed
+// toSorted
+// toSpliced
+```
 ---
 
 ## Arrays
