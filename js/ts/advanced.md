@@ -1,4 +1,4 @@
-# Classes <!-- omit in toc -->
+# Advanced Types <!-- omit in toc -->
 
 ## Sections <!-- omit in toc -->
 

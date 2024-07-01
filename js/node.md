@@ -3,6 +3,7 @@
 ## Sections <!-- omit in toc -->
 
 - [Create a Cipher](#create-a-cipher)
+- [Something to look into](#something-to-look-into)
 
 ---
 
@@ -75,4 +76,26 @@ const signToken = (obj) => {
 
 signToken(token);
 
+```
+
+## Something to look into
+
+6-05-2024 7:49 AM - A bit a code that I stumbled on.
+
+```js
+async function build() {
+  const distDir = join(rootDir, 'dist');
+  await createDir(distDir);
+
+  // This caught my attention.
+  const files = await import.meta.glob('src/**/*.ts', { eager: true });
+
+  for (const file of files) {
+    const name = file.replace(/^src\//, '').replace(/\.ts$/, '');
+    const distFile = join(distDir, `${name}.js`);
+    const code = await import(file);
+    await createDir(distDir);
+    await Deno.writeTextFile(distFile, code.default);
+  }
+}
 ```
