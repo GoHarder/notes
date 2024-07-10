@@ -7,8 +7,7 @@
   - [Use](#use)
 - [Links](#links)
 - [Text Styles](#text-styles)
-
----
+- [Uniqe Quote Blocks](#uniqe-quote-blocks)
 
 ## Code-Blocks
 
@@ -22,14 +21,11 @@ const str = 'This is a string;'
 const str = 'This is a string';
 ```
 
----
-
 ## Latex
 
 It is possible to encode mathematical information inside a markdown file using latex.
 
 > LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.
-
 > https://www.latex-project.org/
 
 ### Use
@@ -44,8 +40,6 @@ $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 [Cheat Sheet](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf)
 
----
-
 ## Links
 
 ```
@@ -53,8 +47,6 @@ $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 ```
 
 [Reddit](www.reddit.com)
-
----
 
 ## Text Styles
 
@@ -79,4 +71,29 @@ _Italic text_
 
 <u>Underline text</u>
 
----
+## Uniqe Quote Blocks
+
+> [!NOTE]
+> ```Markdown
+> > [!NOTE]
+> ```
+
+> [!WARNING]
+> ```Markdown
+> > [!WARNING]
+> ```
+
+> [!TIP]
+> ```Markdown
+> > [!TIP]
+> ```
+
+> [!IMPORTANT]
+> ```Markdown
+> > [!IMPORTANT]
+> ```
+
+> [!CAUTION]
+> ```Markdown
+> > [!CAUTION]
+> ```
