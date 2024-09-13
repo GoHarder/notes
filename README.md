@@ -19,8 +19,10 @@ Repository of various notes
 
 ## Languages
 
+- [HTML](./html/main.md)
 - [Javascript](./js/main.md)
 - [Markdown](./markdown/main.md)
+- [Rust](./rust/main.md)
 
 ---
 
